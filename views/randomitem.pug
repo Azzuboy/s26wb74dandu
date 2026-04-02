@@ -2,3 +2,18 @@ extends layout
 
 block content
   h1= title
+
+  -
+    const image_names = [
+      "prairie.svg",
+      "refuge.svg",
+      "canyon.svg",
+      "forest.svg",
+      "wetland.svg"
+    ];
+
+  - for (let i = 0; i < 3; i++) {
+    - const index = Math.floor(Math.random() * 5);
+    - const imageName = image_names[index];
+    img(src=`/images/${imageName}` alt=`Random ${imageName}` width="300" height="300")
+  - }

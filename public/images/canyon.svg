@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f1f0e9"/>
+  <polygon points="0,260 140,120 280,260" fill="#c9b79c"/>
+  <polygon points="120,260 240,150 400,260" fill="#b7a384"/>
+  <rect y="260" width="400" height="140" fill="#9bbf8a"/>
+  <text x="24" y="360" font-family="Verdana" font-size="20" fill="#3e3b2f">Canyon Reserve</text>
+</svg>

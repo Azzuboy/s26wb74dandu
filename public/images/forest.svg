@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#eef7f1"/>
+  <rect y="250" width="400" height="150" fill="#87b98f"/>
+  <circle cx="100" cy="210" r="28" fill="#6aa76a"/>
+  <circle cx="160" cy="210" r="28" fill="#6aa76a"/>
+  <circle cx="220" cy="210" r="28" fill="#6aa76a"/>
+  <circle cx="280" cy="210" r="28" fill="#6aa76a"/>
+  <text x="24" y="360" font-family="Verdana" font-size="20" fill="#2e3d2e">Forest Sanctuary</text>
+</svg>
