@@ -7,17 +7,19 @@ block content
   button(type="button", class="btn btn-secondary", onclick="reduce()") Press me
   div#use take some away
 
-script.
-  let current = 11;
-  let quantity = 2;
+  script.
+    let current = 11;
+    let quantity = 2;
 
-  function reduce() {
-    current = current - quantity;
+    function reduce() {
+      current = current - quantity;
 
-    if (current < 0) {
-      current = 0;
+      if (current < 0) {
+        current = 0;
+      }
+
+      document.getElementById("use").innerHTML =
+        "Reduced by " + quantity + " to " + current;
     }
 
-    document.getElementById("use").innerHTML =
-      "Reduced by " + quantity + " to " + current;
-  }
+  a(href="/naturereserves") View NatureReserves Results

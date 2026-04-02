@@ -2,3 +2,31 @@ extends layout
 
 block content
   h1= title
+
+  -
+    const results = [
+      {
+        name: "Tallgrass Prairie Preserve",
+        region: "Oklahoma",
+        area_acres: 39900,
+        established_year: 1993
+      },
+      {
+        name: "Bear River Migratory Bird Refuge",
+        region: "Utah",
+        area_acres: 74000,
+        established_year: 1928
+      },
+      {
+        name: "Alligator River National Wildlife Refuge",
+        region: "North Carolina",
+        area_acres: 152000,
+        established_year: 1984
+      }
+    ];
+
+  .container-fluid
+    .row
+      each reserve in results
+        .col-sm-2
+          | #{reserve.name} — #{reserve.region} — #{reserve.area_acres} acres — Est. #{reserve.established_year}
