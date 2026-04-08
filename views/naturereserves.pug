@@ -24,9 +24,15 @@ block content
         established_year: 1984
       }
     ];
+    results.sort((a, b) => a.name.localeCompare(b.name));
 
   .container-fluid
     .row
-      each reserve in results
-        .col-sm-2
+      each reserve, index in results
+        .col-sm-2(onclick=`buy(${index})`)
           | #{reserve.name} — #{reserve.region} — #{reserve.area_acres} acres — Est. #{reserve.established_year}
+
+  script.
+    function buy(index) {
+      alert("You purchased item " + index);
+    }
